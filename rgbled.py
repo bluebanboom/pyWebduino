@@ -1,6 +1,7 @@
 # coding:utf-8
 
 from board import *
+import firmata
 import time
 
 boardURL = 'ws://'
@@ -13,13 +14,13 @@ def main():
     board.reset()
     board.samplingInterval(50)
 
-    redPin = 15
+    redPin   = 15
     greenPin = 12
-    bluePin = 13
+    bluePin  = 13
 
-    board.setPinMode(redPin, 0x03)
-    board.setPinMode(greenPin, 0x03)
-    board.setPinMode(bluePin, 0x03)
+    board.setPinMode(redPin, firmata.PIN_PWM)
+    board.setPinMode(greenPin, firmata.PIN_PWM)
+    board.setPinMode(bluePin, firmata.PIN_PWM)
 
     board.sendAnalogData(redPin, 0)
     board.sendAnalogData(greenPin, 0)
