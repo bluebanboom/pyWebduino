@@ -8,7 +8,7 @@
     git clone https://github.com/bluebanboom/pyWebduino
     cd pyWebduino
     virtualenv . --no-site-packages
-    source bin/active
+    source bin/activate
     pip install -r requirements.txt
 
 ## rgbled.py：
