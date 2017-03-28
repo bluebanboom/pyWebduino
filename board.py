@@ -48,6 +48,9 @@ class Board(object):
     def reportVersion(self):
         self.sendPacket(REPORT_VERSION)
 
+    def queryCapability(self):
+        self.sendPacket(START_SYSEX, CAPABILITY_QUERY, END_SYSEX)
+
     def setPinMode(self, pin, mode):
         self.sendPacket(SET_PIN_MODE, pin, mode)
 
