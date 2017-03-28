@@ -33,3 +33,17 @@ I2C_CONFIG                  = 0x78 # Configure special I2C settings such as powe
 SAMPLING_INTERVAL           = 0x7A # sampling interval
 SYSEX_NON_REALTIME          = 0x7E # MIDI Reserved for non-realtime messages
 SYSEX_REALTIME              = 0x7F # MIDI Reserved for realtime messages
+
+# PIN Supported Modes
+PIN_DIGITAL_INPUT           = 0x00
+PIN_DIGITAL_OUTPUT          = 0x01
+PIN_ANALOG_INPUT            = 0x02
+PIN_PWM                     = 0x03
+PIN_SERVO                   = 0x04
+PIN_SHIFT                   = 0x05
+PIN_I2C                     = 0x06
+PIN_ONEWIRE                 = 0x07
+PIN_STEPPER                 = 0x08
+PIN_ENCODER                 = 0x09
+PIN_SERIAL                  = 0x0A
+PIN_INPUT_PULLUP            = 0x0B
